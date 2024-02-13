@@ -1,9 +1,8 @@
 # APT-Rx
 Este programa decodifica un archivo de audio en formato APT (Automatic Picture Transmission) en formato WAV para obtener una imagen en escala de grises y en falso color.
 
-## Recepcionar audio APT
+## Recepcionar audio APT con RTL-SDR
 
-# Recepcionar con RTL-SDR
 Puedes recepcionar un audio APT en WAV con un RTL-SDR v3/v4 con el siguiente comando:
 ```bash
 rtl_fm -s 115000 -f 137500000 "./Files_Rx/audio_FM_Rx.wav"
