@@ -9,6 +9,17 @@ Este programa decodifica archivos de audio en formato APT (Automatic Picture Tra
 - Filtrado de ruido para mejorar la calidad de la imagen.
 - Guardado de la imagen decodificada y los componentes individuales de la imagen.
 
+## Funcionalidades
+
+- **Decodificación de Imágenes APT**: Transforma archivos de audio WAV en imágenes en escala de grises transmitidas por satélites meteorológicos.
+- **Remuestreo de Audio**: Ajusta la velocidad de remuestreo del audio para una decodificación precisa.
+- **Transformada de Hilbert**: Obtén información de amplitud (AM) utilizando la transformada de Hilbert.
+- **Submuestreo de Señales**: Reduce el tamaño de la señal transformada para obtener las imágenes deseadas.
+- **Cuantización de Señales**: Digitaliza la señal para prepararla para la reconstrucción de la imagen.
+- **Reconstrucción de Imágenes**: Convierte la información decodificada en imágenes 2D.
+- **Filtrado de Ruido**: Elimina filas con alto ruido para mejorar la calidad de la imagen.
+- **Guardado de Imágenes**: Permite exportar las imágenes decodificadas para su análisis.
+
 ## Uso
 
 1. Especifica la ruta del archivo de audio APT en formato WAV que se va a decodificar.
