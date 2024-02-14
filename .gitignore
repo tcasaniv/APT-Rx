@@ -1,3 +1,7 @@
+Files_Rx/*
+Files_decoded/*
+Files_Color/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
