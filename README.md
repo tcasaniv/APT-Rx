@@ -3,16 +3,29 @@ Este programa decodifica un archivo de audio en formato APT (Automatic Picture T
 
 ## Recepcionar audio APT con RTL-SDR
 
-Puedes recepcionar un audio APT en WAV con un RTL-SDR v3/v4 con el siguiente comando:
-```bash
-rtl_fm -s 115000 -f 137500000 "./Files_Rx/audio_FM_Rx.wav"
-```
-El comando recepciona y demodula FM con una frecuencia de muestreo (samplerate) de 115kHz a una frecuencia central de 137.5 MHz y lo guarda en la ruta `./Files_Rx/audio_FM_Rx.wav`.
+El programa en python `FM_Rx.ipynb`  recepciona y demodula FM con una frecuencia de muestreo (samplerate) de 115kHz a una frecuencia central de 137.5 MHz y lo guarda en la ruta `./Files_Rx/audio_APT_Rx_pyfm.wav`.
+
+### Uso
+- Configura las variables para personalizar la frecuencia de recepción, el samplerate del SDR y la desviación de la frecuencia central.
+- Especifica el ancho de banda que ocupa la señal FM.
+- Ejecuta el código.
+
+### Funcionalidades
+
+- Recepción y demodulación de señales FM con una frecuencia de muestreo (samplerate) de 115kHz, centrada en 137.5 MHz.
+- Utilización de muestras I/Q provenientes de un dispositivo RTL-SDR v3 para el procesamiento de la señal.
+- Filtrado de la porción del espectro que contiene la señal FM del transmisor APT.
+- Remuestreo de las muestras para reducir el consumo de memoria RAM.
+- Demodulación de la señal FM y filtrado de la porción del espectro correspondiente al audio útil.
+- Ajuste de la amplitud (volumen) del audio resultante.
+- Remuestreo del audio a un formato válido para archivos WAV de 16 bits PCM.
+- Guardado del audio APT resultante en formato WAV en la ruta `./Files_Rx/audio_APT_Rx_pyfm.wav`.
+
 
 
 ## APT Decoder
 
-Este programa decodifica archivos de audio en formato APT (Automatic Picture Transmission) en archivos de imagen en escala de grises. La transmisión APT es comúnmente utilizada en satélites meteorológicos y de inteligencia para transmitir imágenes.
+Este programa `APT_Decoder.ipynb` decodifica archivos de audio en formato APT (Automatic Picture Transmission) en archivos de imagen en escala de grises. La transmisión APT es comúnmente utilizada en satélites meteorológicos y de inteligencia para transmitir imágenes.
 
 ### Características Principales
 
